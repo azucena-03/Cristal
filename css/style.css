@@ -48,6 +48,10 @@ h1,h2,h3{
     padding-right: 0.5rem;
     margin: 0 auto;
 }
+.active{
+    background-color: var(--markerColor);
+    padding: .5rem 1rem;
+}
 .section{
     padding: 5rem 0 4rem;
 }
@@ -200,11 +204,12 @@ header{
     padding: .5rem 1rem ;
     border-radius: .5rem;
 }
-
+.collection__title,
 .new__title{
     margin-bottom: 2rem;
     font-size: var(--normal-font);
 }
+.collection__img,
 .new__img{
     width: 200px;
     aspect-ratio: 1/1;
@@ -306,4 +311,39 @@ header{
 }
 .category__icon{
     font-size: var(--big-font);
+}
+.collection__container{
+    grid-template-columns: 550px 450px;
+    column-gap: 2.5rem;
+}
+.collection__description{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.collection__image{
+    background-image: url(../img/coll1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.collection__items{
+    display: flex;
+    align-items: center;
+    column-gap: 3.5rem;
+}
+.collection__item{
+    position: relative;
+}
+.collection__img{
+    background-color: var(--secondaryColor);
+    padding: 2rem 1rem;
+}
+.s_info{
+    position: absolute;
+    background-color: var(--markerColor);
+    padding: 1.5rem;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    left: -25%;
+    top: -10%;
+    color: var(--white);
 }
