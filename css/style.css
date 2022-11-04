@@ -52,6 +52,17 @@ h1,h2,h3{
     background-color: var(--markerColor);
     padding: .5rem 1rem;
 }
+.active_c::before{
+    content: "";
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: var(--markerColor);
+    top: 100%;
+    left: 50%;
+
+}
 .section{
     padding: 5rem 0 4rem;
 }
@@ -107,7 +118,6 @@ header{
     background-position: center;
     background-size: cover;
     background-blend-mode: multiply;
-   
 }
 .hero__img{
     padding: 50px;
@@ -162,8 +172,15 @@ header{
 .about__drescription{
     margin-bottom: 4rem;
 }
+.collection__description,
+.about__drescription{
+    border-top: 1px solid var(--markerColor);
+    border-bottom: 1px solid var(--markerColor);
+    padding: 1rem 0;
+}
 .about__image{
     background-image: url(../img/about-b.jpg);
+    border: 1px solid var(--markerColor);
 }
 .about__img{
     padding: 50px;
@@ -171,27 +188,33 @@ header{
 }
 
 .btn__about{
-    background-color: var(--markerColor);
+    border: 1px solid var(--markerColor);
     padding: 1rem 1.5rem;
     text-align: center;
     width: 45%;
-    color: var(--white);
+    color: var(--textColor);
 }
 
 .new__category{
+    border-top: 1px solid var(--markerColor);
+    border-bottom: 1px solid var(--markerColor);
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
 }
-.new__category_t:nth-child(2){
+.new__category_t{
     padding-left: 2rem;
     padding-right: 2rem;
+    border-right:  1px solid var(--markerColor);
+    position: relative;
+    cursor: pointer;
 }
 .btn__new{
-    background-color: var(--markerColor);
-    padding: 0.805rem 1rem;
+    border:  1px solid var(--markerColor);
+    padding: .5rem 1rem;
     text-align: center;
-    color: var(--white);
+    color: var(--textColor);
+    margin: .5rem;
 }
 .new__items{
     grid-template-columns: repeat(4, 1fr);
@@ -199,21 +222,33 @@ header{
     place-items: center;
 }
 .new__item{
+    border:  1px solid var(--markerColor);
     text-align: center;
-    box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.1);
     padding: .5rem 1rem ;
     border-radius: .5rem;
+}
+.new__drescription{
+    border-top: 1px solid var(--markerColor);
+    border-bottom: 1px solid var(--markerColor);
+    padding: .5rem;
 }
 .collection__title,
 .new__title{
     margin-bottom: 2rem;
     font-size: var(--normal-font);
 }
+.collection__title{
+    border-bottom: 1px solid var(--markerColor);
+    padding-bottom: .5rem;
+}
 .collection__img,
 .new__img{
     width: 200px;
     aspect-ratio: 1/1;
     object-fit: fill;
+}
+.collection__img{
+    border: 1px solid var(--markerColor);
 }
 .more__container{
     text-align: center;
@@ -315,12 +350,14 @@ header{
 .collection__container{
     grid-template-columns: 550px 450px;
     column-gap: 2.5rem;
+    border-top: 1px solid var(--markerColor);
 }
 .collection__description{
     margin-top: 2rem;
     margin-bottom: 3rem;
 }
 .collection__image{
+    border: 1px solid var(--markerColor);
     background-image: url(../img/coll1.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -338,6 +375,9 @@ header{
     background-color: var(--secondaryColor);
     padding: 2rem 1rem;
 }
+.footer__icon:hover{
+    color: var(--markerColor);
+}
 .s_info{
     position: absolute;
     background-color: var(--markerColor);
@@ -346,4 +386,10 @@ header{
     left: -25%;
     top: -10%;
     color: var(--white);
+}
+#tabs .hide {
+    display: none;
+}
+#tabs .show {
+    display: block;
 }
