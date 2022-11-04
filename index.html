@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Inicio</title>
@@ -28,8 +29,8 @@
     <main>
         <section class="hero"> 
             <div class="hero__container container section grid">
-                <div class="hero__image">
-                    <img src="img/separator1.jpg" alt="" class="hero__img">
+                <div class="hero__image" id="hero-image">
+                    <img src="img/separator1.jpg" alt="" class="hero__img" id="hero-img">
                 </div>
                 <div class="hero__data">
                     <h1 class="section__title lines">Lorem ipsum dolor sit</h1>
@@ -44,7 +45,7 @@
                     <span>Lorem ipsum dolor sit amet consectetur.</span>
                     <h2 class="section__subtitle">Lorem, ipsum dolor.</h2>
                     <p class="about__drescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem fugit corporis ratione obcaecati dignissimos sint Lorem ipsum dolor sit amet Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita veritatis eaque iste cum mollitia doloremque minima similique ipsa ullam laudantium.</p>
-                    <a href="#" class="btn__about">Lorem, ipsum.</a>
+                    <a href="./pages/nosotros.html" class="btn__about" id="btn-about">Lorem, ipsum.</a>
                 </div>
                 <div class="about__image">
                     <img src="img/about.jpg" alt="" class="about__img">
@@ -53,43 +54,42 @@
         </section>
 
         <section class="new">
-            <div class="new__container container section">
+            <div class="new__container container section" id="tabs">
                 <div class="new__category">
                     <div class="flex_c">
-                        <p class="new__category_t">Lorem, ipsum</p>
-                        <p class="new__category_t">Lorem, ipsum</p>
-                        <p class="new__category_t">Lorem, ipsum</p>
+                        <p class="new__category_t" onclick="opmenu(1)">Lorem, ipsum</p>
+                        <p class="new__category_t" onclick="opmenu(2)">Lorem, ipsum</p>
+                        <p class="new__category_t" onclick="opmenu(3)">Lorem, ipsum</p>
                     </div>
-                    <a href="#" class="btn__new">Lorem, ipsum</a>
+                    <a href="./pages/categoria.html" class="btn__new" id="btn-new">Lorem, ipsum</a>
                 </div>
-                <div class="new__items grid">
+                <div class="new__items grid new__category_content" id="new-rings">
                     <article class="new__item">
-                        <h3 class="new__title">Lorem, ipsum dolor</h3>
-                        <img src="img/item1.png" class="new__img" alt="">
-                        <p class="new__drescription">S/. 50.00</p>
+                        <h3 class="new__title" id="new-tit">Lorem, ipsum dolor</h3>
+                        <img src="img/items/item1.png" class="new__img" alt="" id="new-img-1">
+                        <p class="new__drescription" id="new-d">S/. 50.00</p>
                     </article>
                     <article class="new__item">
-                        <h3 class="new__title">Lorem, ipsum dolor</h3>
-                        <img src="img/item2.png" class="new__img" alt="">
-                        <p class="new__drescription">S/. 50.00</p>
+                        <h3 class="new__title" id="new-tit-2">Lorem, ipsum dolor</h3>
+                        <img src="img/items/item2.png" class="new__img" alt="" id="new-img-2">
+                        <p class="new__drescription" id="new-d-2">S/. 80.00</p>
                     </article>
                     <article class="new__item">
-                        <h3 class="new__title">Lorem, ipsum dolor</h3>
-                        <img src="img/item3.png" class="new__img" alt="">
-                        <p class="new__drescription">S/. 50.00</p>
+                        <h3 class="new__title" id="new-tit-3">Lorem, ipsum dolor</h3>
+                        <img src="img/items/item3.png" class="new__img" alt="" id="new-img-3">
+                        <p class="new__drescription" id="new-d-3"> S/. 90.00</p>
                     </article>
                     <article class="new__item">
-                        <h3 class="new__title">Lorem, ipsum dolor</h3>
-                        <img src="img/item4.png" class="new__img" alt="">
-                        <p class="new__drescription">S/. 50.00</p>
+                        <h3 class="new__title" id="new-tit-4">Lorem, ipsum dolor</h3>
+                        <img src="img/items/item4.png" class="new__img" alt="" id="new-img-4">
+                        <p class="new__drescription" id="new-d-4">S/. 75.50</p>
                     </article>
-
                 </div>
             </div>
         </section>
 
-        <section class="collection section">
-            <div class="collection__container container grid">
+        <section class="collection">
+            <div class="collection__container section container grid">
                 <div class="collection__data section">
                     <div class="collection__data_d">
                         <h2 class="section__subtitle">Lorem, ipsum dolor</h2>
@@ -98,23 +98,23 @@
                     </div>
                     <div class="collection__items">
                         <article class="collection__item">
-                            <img src="img/coll_i1.png" class="collection__img" alt="">
+                            <img src="img/items/coll_i1.png" class="collection__img" alt="">
                             <h3 class="collection__title">Lorem, ipsum</h3>
                             <div class="s_info">
-                                <p class="info">S/. 150</p>
+                                <p class="info" id="info-a">S/. 150</p>
                             </div>
                         </article>
                         <article class="collection__item">
-                            <img src="img/coll_i2.png" class="collection__img" alt="">
+                            <img src="img/items/coll_i2.png" class="collection__img" alt="">
                             <h3 class="collection__title">Lorem, ipsum</h3>
                             <div class="s_info">
-                                <p class="info">S/. 150</p>
+                                <p class="info" id="info-b">S/. 150</p>
                             </div>
                         </article>
                     </div>
 
                 </div>
-                <div class="collection__image">
+                <div class="collection__image" id="collection-image">
                 </div>
             </div>
         </section>
@@ -123,7 +123,7 @@
             <div class="more__container">
                 <h2 class="section__subtitle">Lorem ipsum dolor sit amet lorem</h2>
                 <p class="more__description">Lorem ipsum dolor sit.</p>
-                <a href="#" class="btn__more">Lorem, ipsum</a>
+                <a href="#" class="btn__more" id="btn-more">Lorem, ipsum</a>
             </div>
         </section>
 
@@ -147,9 +147,9 @@
                 <p class="footer__phone">+954182356</p>
                 <p class="footer__location">Lorem ipsum dolor sit amet</p>
                 <div class="footer__Social">
-                    <a href="#" class="footer__link"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="footer__link"><i class='bx bxl-instagram-alt'></i></a>
-                    <a href="#" class="footer__link"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__link" onclick="social(0)"><i class='bx bxl-facebook footer__icon'></i></a>
+                    <a href="#" class="footer__link" onclick="social(1)"><i class='bx bxl-instagram-alt footer__icon'></i></a>
+                    <a href="#" class="footer__link" onclick="social(2)"><i class='bx bxl-twitter footer__icon'></i></a>
                 </div>
             </div>
             <div class="footer__c">
@@ -176,3 +176,5 @@
     
 </body>
 </html>
+
+<script src="./js/script.js"></script>
