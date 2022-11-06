@@ -76,6 +76,7 @@ h1,h2,h3{
     font-family: var(--secondaryFont);
     font-weight: var(--font-semi-font);
     font-size: var(--big-font);
+    padding-bottom: 2rem;
 }
 .grid{
     display: grid;
@@ -88,6 +89,7 @@ h1,h2,h3{
 /* --------------NAV------------- */
 header{
     max-height: 4rem;
+    margin-bottom: 3rem
 }
 .nav{
     text-align: center;
@@ -156,6 +158,16 @@ header{
     background-color: var(--textColor);
 }
 
+.rings__line::before{
+    content: "";
+    position: absolute;
+    width: 75%;
+    background-color: var(--markerColor);
+    height: 0.2rem;
+    top: 8%;
+    right: 0;
+}
+
 .about__container{
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2.5rem;
@@ -216,22 +228,29 @@ header{
     color: var(--textColor);
     margin: .5rem;
 }
+.rings__container,
+.popular__items,
 .new__items{
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     place-items: center;
 }
+.rings__item,
+.popular__item,
 .new__item{
     border:  1px solid var(--markerColor);
     text-align: center;
     padding: .5rem 1rem ;
     border-radius: .5rem;
 }
+.rings__drescription,
+.popular__drescription,
 .new__drescription{
     border-top: 1px solid var(--markerColor);
     border-bottom: 1px solid var(--markerColor);
     padding: .5rem;
 }
+.popular__title,
 .collection__title,
 .new__title{
     margin-bottom: 2rem;
@@ -241,12 +260,15 @@ header{
     border-bottom: 1px solid var(--markerColor);
     padding-bottom: .5rem;
 }
+.rings__img,
+.popular__img,
 .collection__img,
 .new__img{
     width: 200px;
     aspect-ratio: 1/1;
     object-fit: fill;
 }
+.popular__img,
 .collection__img{
     border: 1px solid var(--markerColor);
 }
@@ -322,6 +344,8 @@ header{
 }
 .category__name:first-child{
     background-image: url(../img/category1.jpg);
+    background-color: var(--markerColor);
+    background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     width: 300px;
@@ -330,6 +354,8 @@ header{
 }
 .category__name:nth-child(2){
     background-image: url(../img/category2.jpg);
+    background-color: var(--markerColor);
+    background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     width: 300px;
@@ -338,11 +364,19 @@ header{
 }
 .category__name:nth-child(3){
     background-image: url(../img/category3.jpg);
+    background-color: var(--markerColor);
+    background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     width: 300px;
     padding: 5rem 0 5rem;
     text-align: center;
+}
+.category__btn{
+    color: var(--white);
+    padding: .5rem 1rem;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
 }
 .category__icon{
     font-size: var(--big-font);
@@ -392,4 +426,55 @@ header{
 }
 #tabs .show {
     display: block;
+}
+.phrase{
+    border-bottom:1px solid var(--markerColor) ;
+}
+.phrase__title{
+    margin-bottom: 1rem;
+}
+.phrase__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    text-align: center;
+    place-items: center;
+}
+.phrase__img{
+    width: 500px;
+}
+.brands__container{
+    column-gap: 1.5rem;
+}
+.brands__img{
+    width: 200px;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: center;
+}
+.rings{
+    position: relative;
+}
+.earring__b__container,
+.rings__b__container{
+    text-align: center;
+}
+.rings__b{
+    background-color: var(--markerColor);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    place-content: center;
+    place-items: center;
+    color: var(--white);
+}
+.earring__b{
+    background-color: var(--markerColor);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    place-content: center;
+    place-items: center;
+    color: var(--white);
 }
