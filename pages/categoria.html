@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Categoria</title>
@@ -26,57 +27,67 @@
         </nav>
     </header>
     <main>
+        <section class="phrase section">
+            <div class="phrase__container container grid">
+                <div>
+                    <img src="../img/c1.jpg" alt="" class="phrase__img">
+                    <h2 class="phrase__title">BIRTHDAY GIFTS</h2>
+                    <p class="phrase__description">MEANINGFUL GIFTS HEARTCRAFTED JUST FOR YOUR LOVED ONES</p>
+                </div>
+                <div>
+                    <img src="../img/c2.jpg" alt="" class="phrase__img">
+                    <h2 class="phrase__title">ANNIVERSARY GIFTS</h2>
+                    <p class="phrase__description">CELEBRATE YOUR JOURNEY TOGETHER</p>
+                </div>
+            </div>
+        </section>
+
         <section class="category"> 
             <div class="category__container container section">
-                <h1 class="section__title">Lorem ipsum dolor sit amet consectetur</h1>
                 <div class="category__items grid">
-                    <p class="category__name">Lorem, ipsum.</p>
-                    <p class="category__name">Lorem, ipsum.</p>
-                    <p class="category__name">Lorem, ipsum.</p>
-                </div>
-                <i class='bx bx-down-arrow-alt category__icon'></i>
-            </div>
-        </section>
-
-        <section class="new">
-            <div class="new__container container section">
-                <div class="new__items grid">
-                    <article class="new__item">
-                        <h3 class="new__title">Lorem, ipsum dolor</h3>
-                        <img src="../img/item4.png" class="new__img" alt="">
-                        <p class="new__drescription">S/. 50.00</p>
-                    </article>
-                    <article class="new__item">
-                        <h3 class="new__title">Lorem, ipsum dolor</h3>
-                        <img src="../img/item4.png" class="new__img" alt="">
-                        <p class="new__drescription">S/. 50.00</p>
-                    </article>
-                    <article class="new__item">
-                        <h3 class="new__title">Lorem, ipsum dolor</h3>
-                        <img src="../img/item4.png" class="new__img" alt="">
-                        <p class="new__drescription">S/. 50.00</p>
-                    </article>
-                    <article class="new__item">
-                        <h3 class="new__title">Lorem, ipsum dolor</h3>
-                        <img src="../img/item4.png" class="new__img" alt="">
-                        <p class="new__drescription">S/. 50.00</p>
-                    </article>
+                    <div class="category__name"><a href="anillos.html" class="category__btn">Lorem, ipsum.</a></div>
+                    <div class="category__name"><a href="aretes.html" class="category__btn">Lorem, ipsum.</a></div>
+                    <div class="category__name"><a href="collares.html" class="category__btn">Lorem, ipsum.</a></div>
                 </div>
             </div>
         </section>
 
-
-
-        <section class="separator section">
-            <div class="separator__container container grid">
-                <img src="../img/separator1.jpg" alt="" class="separator__img">
-                <img src="../img/separator2.jpg" alt="" class="separator__img">
-                <img src="../img/separator3.jpg" alt="" class="separator__img">
-                <img src="../img/separator4.jpg" alt="" class="separator__img">
-                <img src="../img/separator5.jpg" alt="" class="separator__img">
-                <img src="../img/separator6.jpg" alt="" class="separator__img">
+        <section class="popular">
+            <div class="popular__container container section">
+                <h2 class="section__subtitle">Lorem, ipsum</h2>
+                <div class="popular__items grid">
+                    <article class="popular__item">
+                        <h3 class="popular__title">Lorem, ipsum dolor</h3>
+                        <img src="../img/items/item5.jpg" class="popular__img" alt="" onmouseover="changeImage(1, this)" onmouseout="changeImage(2, this)">
+                        <p class="popular__drescription">S/. 50.00</p>
+                    </article>
+                    <article class="popular__item">
+                        <h3 class="popular__title">Lorem, ipsum dolor</h3>
+                        <img src="../img/items/item6.jpg" class="popular__img" alt="" onmouseover="changeImage(3, this)" onmouseout="changeImage(4, this)">
+                        <p class="popular__drescription">S/. 50.00</p>
+                    </article>
+                    <article class="popular__item">
+                        <h3 class="popular__title">Lorem, ipsum dolor</h3>
+                        <img src="../img/items/item7.jpg" class="popular__img" alt="" onmouseover="changeImage(5, this)" onmouseout="changeImage(6, this)"> 
+                        <p class="popular__drescription">S/. 50.00</p>
+                    </article>
+                    <article class="popular__item">
+                        <h3 class="popular__title">Lorem, ipsum dolor</h3>
+                        <img src="../img/items/item8.jpg" class="popular__img" alt="" onmouseover="changeImage(7, this)" onmouseout="changeImage(8, this)">
+                        <p class="popular__drescription">S/. 50.00</p>
+                    </article>
+                </div>
             </div>
         </section>
+
+        <section class="brands section">
+            <div class="brands__container container flex_c">
+                <img src="../img/chosen.png" alt="" class="brands__img">
+                <img src="../img/lab.png" alt="" class="brands__img">
+                <img src="../img/pnina.png" alt="" class="brands__img">
+            </div>
+        </section>
+
     </main>
     <footer class="footer"> 
         <div class="footer__container container section grid">
@@ -116,3 +127,48 @@
     
 </body>
 </html>
+
+<script>
+
+function changeImage(x, image){
+    if (x == 1) {
+        image.src = "../img/items/item5.1.jpg";
+    }
+    if(x == 2){
+        image.src = "../img/items/item5.jpg";
+    }
+    if(x == 3){
+        image.src = "../img/items/item6.1.jpg";
+    }
+    if(x == 4){
+        image.src = "../img/items/item6.jpg";
+    }
+    if(x == 5){
+        image.src = "../img/items/item7.1.jpg";
+    }
+    if(x == 6){
+        image.src = "../img/items/item7.jpg";
+    }
+    if(x == 7){
+        image.src = "../img/items/item8.1.jpg";
+    }
+    if(x == 8){
+        image.src = "../img/items/item8.jpg";
+    }
+}
+
+function rotar(e){
+    e.style.opacity = "0.7";
+    e.style.transition = "all 1s ease-out";
+}
+
+function origin(e){
+    e.style.opacity = "1";
+    e.style.transition = "all 1s ease-out";
+}
+
+for(var n = 0; n < document.getElementsByClassName("category__name").length; n++) {
+    document.getElementsByClassName("category__name")[n].setAttribute("onmouseover", "rotar(this)");
+    document.getElementsByClassName("category__name")[n].setAttribute("onmouseout", "origin(this)");
+}
+</script>

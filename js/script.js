@@ -172,11 +172,3 @@ function social(n){
     }
 }
 //
-var btnSocial = document.getElementsByClassName("footer__icon");
-
-btnSocial.onmouseover = function(){
-    btnSocial.style.color = "rgb(209, 172, 161)";
-}
-btnSocial.onmouseout = function(){
-    btnSocial.style.color = "rgb(238, 238, 238)";
-}
