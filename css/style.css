@@ -4,6 +4,7 @@
     --primaryColor: rgb(241, 232, 228);
     --secondaryColor: rgb(226, 191, 178);
     --markerColor: rgb(209, 172, 161);
+    --backColor: rgb(224, 171, 130);
     --footerColor: rgb(183, 181, 192);
     --textColor: rgb(150, 127, 120);
     --white: rgb(238, 238, 238);
@@ -89,21 +90,20 @@ h1,h2,h3{
 /* --------------NAV------------- */
 header{
     max-height: 4rem;
-    margin-bottom: 3rem
+    margin-bottom: 2.7rem
 }
 .nav{
     text-align: center;
     background-color: var(--secondaryColor);
-    padding: .5rem;
 }
 .nav__menu{
     border-top: 2px solid var(--markerColor);
-    padding-top: .5rem;
 }
 .footer__list,
 .nav__list{
     list-style: none;
     column-gap: 2rem;
+    padding: 0.5rem;
 }
 .footer__link,
 .nav__link{
@@ -164,7 +164,7 @@ header{
     width: 75%;
     background-color: var(--markerColor);
     height: 0.2rem;
-    top: 8%;
+    top: 6.5%;
     right: 0;
 }
 
@@ -228,6 +228,7 @@ header{
     color: var(--textColor);
     margin: .5rem;
 }
+.card__container,
 .rings__container,
 .popular__items,
 .new__items{
@@ -235,6 +236,7 @@ header{
     gap: 2rem;
     place-items: center;
 }
+.card__item,
 .rings__item,
 .popular__item,
 .new__item{
@@ -243,13 +245,15 @@ header{
     padding: .5rem 1rem ;
     border-radius: .5rem;
 }
-.rings__drescription,
+.card__drescription,
 .popular__drescription,
 .new__drescription{
     border-top: 1px solid var(--markerColor);
     border-bottom: 1px solid var(--markerColor);
     padding: .5rem;
+    margin-bottom: .5rem;
 }
+.card__title,
 .popular__title,
 .collection__title,
 .new__title{
@@ -260,6 +264,7 @@ header{
     border-bottom: 1px solid var(--markerColor);
     padding-bottom: .5rem;
 }
+.card__img,
 .rings__img,
 .popular__img,
 .collection__img,
@@ -267,7 +272,9 @@ header{
     width: 200px;
     aspect-ratio: 1/1;
     object-fit: fill;
+    margin-bottom: 1rem;
 }
+.card__img,
 .popular__img,
 .collection__img{
     border: 1px solid var(--markerColor);
@@ -451,7 +458,7 @@ header{
     object-fit: cover;
     object-position: center;
 }
-.rings{
+.card{
     position: relative;
 }
 .earring__b__container,

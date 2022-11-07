@@ -1,3 +1,52 @@
+var activePage = window.location.pathname;
+var navLink = document.querySelectorAll('nav a').forEach(link => {
+    if(link.href.includes(`${activePage}`)){
+        link.classList.add('active');
+    }
+});
+
+
+function hora(){
+
+    let hora = new Date();
+    let h = hora.getHours();
+    let m = hora.getMinutes();
+    let s = hora.getSeconds();
+    let sistemaTiempo = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        sistemaTiempo = "PM";
+    }
+    
+    //-----------------AGREGAR CERO-------------------
+
+    if(h < 10){
+        h = "0" + h;
+    }
+    else h
+
+    if(m < 10){
+        m = "0" + m;
+    }
+    else m
+
+    if(s < 10){
+        s = "0" + s;
+    }
+    else s
+    
+
+    document.getElementById("ph").innerText = "Hora : " + h + ":" + m + ":" + s + " " + sistemaTiempo; 
+    setTimeout("hora()", 1000);
+    
+}
+hora();
+
 //EFECTOS EN IMAGENES
 
 function zoom(){

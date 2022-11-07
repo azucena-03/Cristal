@@ -12,15 +12,16 @@
 <body>
     <header>
         <nav class="nav">
-            <a href="#" class="nav__logo">
+            <div>
                 <img src="../img/logo.png" alt="">
-            </a>
+                <div id="ph"></div>
+            </div>
             <div class="nav__menu">
-                <ul class="nav__list flex_c">
+                <ul class="nav__list flex_c" id="myDIV">
                     <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
-                    <li class="nav__item"><a href="categoria.html" class="nav__link active">Catalogo</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Contactanos</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item"><a href="catalogo.html" class="nav__link">Catalogo</a></li>
+                    <li class="nav__item"><a href="contactenos.html" class="nav__link">Contactanos</a></li>
+                    <li class="nav__item"><a href="sobrenosotros.html" class="nav__link">Nosotros</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Log in</a></li>
                 </ul>
             </div>
@@ -60,21 +61,25 @@
                         <h3 class="popular__title">Lorem, ipsum dolor</h3>
                         <img src="../img/items/item5.jpg" class="popular__img" alt="" onmouseover="changeImage(1, this)" onmouseout="changeImage(2, this)">
                         <p class="popular__drescription">S/. 50.00</p>
+                        <i class='bx bx-plus-circle popular__icon'></i>
                     </article>
                     <article class="popular__item">
                         <h3 class="popular__title">Lorem, ipsum dolor</h3>
                         <img src="../img/items/item6.jpg" class="popular__img" alt="" onmouseover="changeImage(3, this)" onmouseout="changeImage(4, this)">
                         <p class="popular__drescription">S/. 50.00</p>
+                        <i class='bx bx-plus-circle popular__icon'></i>
                     </article>
                     <article class="popular__item">
                         <h3 class="popular__title">Lorem, ipsum dolor</h3>
                         <img src="../img/items/item7.jpg" class="popular__img" alt="" onmouseover="changeImage(5, this)" onmouseout="changeImage(6, this)"> 
                         <p class="popular__drescription">S/. 50.00</p>
+                        <i class='bx bx-plus-circle popular__icon'></i>
                     </article>
                     <article class="popular__item">
                         <h3 class="popular__title">Lorem, ipsum dolor</h3>
                         <img src="../img/items/item8.jpg" class="popular__img" alt="" onmouseover="changeImage(7, this)" onmouseout="changeImage(8, this)">
                         <p class="popular__drescription">S/. 50.00</p>
+                        <i class='bx bx-plus-circle popular__icon'></i>
                     </article>
                 </div>
             </div>
@@ -124,51 +129,9 @@
         </div>
         <p class="copy">&copy; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, repellat</p>
     </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/catalogo.js"></script>
     
 </body>
 </html>
-
-<script>
-
-function changeImage(x, image){
-    if (x == 1) {
-        image.src = "../img/items/item5.1.jpg";
-    }
-    if(x == 2){
-        image.src = "../img/items/item5.jpg";
-    }
-    if(x == 3){
-        image.src = "../img/items/item6.1.jpg";
-    }
-    if(x == 4){
-        image.src = "../img/items/item6.jpg";
-    }
-    if(x == 5){
-        image.src = "../img/items/item7.1.jpg";
-    }
-    if(x == 6){
-        image.src = "../img/items/item7.jpg";
-    }
-    if(x == 7){
-        image.src = "../img/items/item8.1.jpg";
-    }
-    if(x == 8){
-        image.src = "../img/items/item8.jpg";
-    }
-}
-
-function rotar(e){
-    e.style.opacity = "0.7";
-    e.style.transition = "all 1s ease-out";
-}
-
-function origin(e){
-    e.style.opacity = "1";
-    e.style.transition = "all 1s ease-out";
-}
-
-for(var n = 0; n < document.getElementsByClassName("category__name").length; n++) {
-    document.getElementsByClassName("category__name")[n].setAttribute("onmouseover", "rotar(this)");
-    document.getElementsByClassName("category__name")[n].setAttribute("onmouseout", "origin(this)");
-}
-</script>
