@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contactenos.css">
+    <title>Contactanos</title>
+</head>
+
+<body class="main" style="background: linear-gradient(to right, rgb(186, 83, 112), rgb(244, 226, 216));">
+    <header>
+        <nav class="nav">
+            <div>
+                <img src="../img/logo.png" alt="">
+                <div id="ph"></div>
+            </div>
+            <div class="nav__menu">
+                <ul class="nav__list flex_c">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="catalogo.html" class="nav__link">Catalogo</a></li>
+                    <li class="nav__item"><a href="contactenos.html" class="nav__link">Contactanos</a></li>
+                    <li class="nav__item"><a href="sobrenosotros.html" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Log in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="titulo container">
+        <h1>CONTACTANOS</h1>
+    </div>
+    <section class="forma-registro  section">
+        <div class="forma-registro-d container">
+            <form id="frmlogueo" onsubmit="nuevo(this)">
+                <h2 class="contac">PREGUNTAS | SUGERENCIAS</h2>
+                <div class="f-center">
+                    <div class="f-1">
+                        <label for="apellido">Nombre:</label>
+                        <input class="controls" name="apellidos" id="apellido" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="f-1">
+                        <label for="telefono">Celular:</label>
+                        <input class="controls" name="celular" id="telefono" placeholder="Ingrese su celular" maxlength="9">
+                    </div>
+                    <div class="f-1">
+                        <label for="email">Email:</label>
+                        <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su correo electrónico">
+                    </div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea for="" class="textarea" name="txtmensaje" id="mensaje" maxlength=400
+                        placeholder="Ingrese su consulta aquí" title="Tu comentario no  debe exceder los 400 caracteres">
+                        </textarea>
+                    <br>
+                    <font size=4>máximo 400 caracteres</font>
+                </div>
+                <br></br>
+                <input class="botons" type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+    <section class="forma-registro  section">
+        <div class="forma-registro-i container">
+            <div class="contimagenes">
+                <img class="imgs" src="../img/fc.jfif" alt="" onmouseover="mostrargris(this)" onmouseout="normalidad(this)">
+                <img class="imgs" src="../img/fondo.jfif" alt="" onmouseover="mostrargris(this)"
+                    onmouseout="normalidad(this)">
+                <img class="imgs" src="../img/fondoimg.webp" alt="" onmouseover="mostrargris(this)"
+                    onmouseout="normalidad(this)">
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align: center;">
+        <h4> SI TE GUSTA USALO</h4>
+    </section>
+    <footer class="footer">
+        <div class="footer__container container section grid">
+            <div class="footer__info">
+                <a href="#" class="nav__logo">
+                    <img src="../img/logo.png" alt="">
+                </a>
+                <p class="footer__phone">+954182356</p>
+                <p class="footer__location">Lorem ipsum dolor sit amet</p>
+                <div class="footer__Social">
+                    <a href="#" class="footer__link"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__link"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#" class="footer__link"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+            <div class="footer__c">
+                <h3 class="footer__title">Lorem ipsum dolor sit</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Lorem, ipsum dolor</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Lorem, ipsum dolor</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Lorem, ipsum dolor</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Lorem, ipsum dolor</a></li>
+                </ul>
+            </div>
+            <div class="footer__c">
+                <h3 class="footer__title">Lorem ipsum dolor sit</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Lorem, ipsum dolor</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Lorem, ipsum dolor</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Lorem, ipsum dolor</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Lorem, ipsum dolor</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copy">&copy; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, repellat</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/contactenos.js"></script>
+</body>
+
+</html>
